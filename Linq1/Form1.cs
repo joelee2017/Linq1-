@@ -94,5 +94,15 @@ namespace Linq1
             }
             txtShow.Text = "遞減排序：" + Environment.NewLine + s;
         }
+
+
+        private void btnScoreInfo_Click(object sender, EventArgs e)
+        {
+            txtShow.Text = "資料筆數：" + score.Count() + Environment.NewLine +
+                "最高分數" + score.Max() + Environment.NewLine +
+                "最低分數" + score.Min() + Environment.NewLine +
+                "平均分數" + (int)score.Average() + Environment.NewLine +
+                "分數總和" + score.Sum() + Environment.NewLine;
+        }
     }
 }

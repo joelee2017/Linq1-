@@ -35,6 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.txtShow = new System.Windows.Forms.TextBox();
+            this.btnScoreInfo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSearch
@@ -64,7 +65,7 @@
             // btnSortAsc
             // 
             this.btnSortAsc.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSortAsc.Location = new System.Drawing.Point(509, 302);
+            this.btnSortAsc.Location = new System.Drawing.Point(509, 318);
             this.btnSortAsc.Margin = new System.Windows.Forms.Padding(4);
             this.btnSortAsc.Name = "btnSortAsc";
             this.btnSortAsc.Size = new System.Drawing.Size(128, 40);
@@ -113,12 +114,25 @@
             this.txtShow.Size = new System.Drawing.Size(299, 254);
             this.txtShow.TabIndex = 7;
             // 
+            // btnScoreInfo
+            // 
+            this.btnScoreInfo.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnScoreInfo.Location = new System.Drawing.Point(509, 248);
+            this.btnScoreInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.btnScoreInfo.Name = "btnScoreInfo";
+            this.btnScoreInfo.Size = new System.Drawing.Size(128, 40);
+            this.btnScoreInfo.TabIndex = 8;
+            this.btnScoreInfo.Text = "成績資訊";
+            this.btnScoreInfo.UseVisualStyleBackColor = true;
+            this.btnScoreInfo.Click += new System.EventHandler(this.btnScoreInfo_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(687, 590);
+            this.Controls.Add(this.btnScoreInfo);
             this.Controls.Add(this.txtShow);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label1);
@@ -144,6 +158,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.TextBox txtShow;
+        private System.Windows.Forms.Button btnScoreInfo;
     }
 }
 
